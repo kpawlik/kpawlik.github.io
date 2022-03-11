@@ -1,4 +1,5 @@
-# Krzysztof Pawlik
+
+![](./github-header-image.png)
 
 ## Git: [https://github.com/kpawlik](https://github.com/kpawlik)
 
