@@ -1,0 +1,49 @@
+<html>
+    <title>GeoPackage WebAssembly</title>
+    <script src="js/wasm_exec.js"></script>
+    <script src="lib/ol.js"></script>
+    <script src="js/app.js"></script>
+    
+    <link rel="stylesheet" href="lib/ol.css">
+    <link rel="stylesheet" href="style/loader.css">
+    <link rel="stylesheet" href="style/app.css">
+
+<body>
+    <header class="header">
+        <div id="loader"></div>
+        <div id="loader-msg"></div>
+    </header>
+    <section class="header">
+        <div class="input_container">
+            <input type="file" id="file-input">
+        </div>
+        <div class="input_container">
+            <button id="list-features">List Tables</button>
+        </div>
+        <div class="input_container">
+            <button id="list-records">List Records</button>
+        </div>
+        <div class="input_container">
+            <button id="clear-log">Clear log</button>
+        </div>
+        <div class="input_container">
+            <button id="display-table">Display</button>
+        </div>
+    </section>
+    <section style="height: 90%;">
+        <div id="map" style="width: 70%; height: 100%;"></div>
+        <div class="log-container">
+            <code id="log"></code>
+        </div>
+    </section>
+</body>
+
+<dialog id="clear-log-dialog">
+    <form method="dialog">
+      <p>Clear logs?.</p>
+      <button id="clear-log-btn">Clear</button>
+      <button id="close-dialog-btn">Cancel</button>
+    </form>
+</dialog>
+
+</html>
